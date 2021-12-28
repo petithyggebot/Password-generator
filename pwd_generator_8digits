@@ -1,0 +1,11 @@
+import random
+
+letters = "abcdefghijklmnopqrstuvwxyz"
+numbers = "0123456789"
+symbols = "[]()*;/,._-&"
+
+soup = letters + letters.upper() + numbers + symbols
+
+length = 8
+result = "".join(random.sample(soup, length))
+print(result)
